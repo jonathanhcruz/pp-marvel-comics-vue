@@ -24,6 +24,8 @@ yarn test:unit
 ```
 yarn lint
 ```
+## dev
+yarn serve --mode development
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
