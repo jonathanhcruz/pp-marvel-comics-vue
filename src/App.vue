@@ -1,17 +1,24 @@
 <template>
   <div class="App">
-    <SerchForm />
+    <!-- <SerchForm /> -->
     <router-view />
   </div>
 </template>
 
 <script>
-import SerchForm from "@/components/forms/SerchForm.vue";
+import { mapActions } from "vuex";
+// import SerchForm from "@/components/forms/SerchForm.vue";
 
 export default {
   name: "App",
   components: {
-    SerchForm,
+    // SerchForm,
+  },
+  beforeMount() {
+    this.getMarvelComics();
+  },
+  methods: {
+    ...mapActions(["getMarvelComics"]),
   },
 };
 </script>
