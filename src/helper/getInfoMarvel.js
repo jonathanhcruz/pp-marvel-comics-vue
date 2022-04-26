@@ -15,7 +15,11 @@ const structureParamsUrl = (
   return `${paramsAuth}${limitParams}${formatParams}`;
 };
 
-export const getInfoMarvel = async (keyword = "comics", limit = 10, format) => {
+export const getInfoMarvel = async (
+  keyword = "comics",
+  limit = 20,
+  format = "hardcover"
+) => {
   const { ts, generateHash, publicKey } = auth();
   const paramsUrl = structureParamsUrl(
     keyword,

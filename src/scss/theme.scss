@@ -1,0 +1,41 @@
+@import './mixings/mix.scss';
+
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 0 .2rem;
+    &:hover {
+        color: var(--black);
+    }
+}
+
+.app {
+    &__btn {
+        &--primary {
+            @include btn(
+                var(--black), 
+                var(--white), 
+                var(--grey),
+                var(--black)
+            );
+        }
+        &--secondary {
+            @include btn(
+                var(--black), 
+                var(--white), 
+                var(--grey),
+                var(--black)
+            );
+        }
+    }  
+    
+    &__object-fit {
+        object-fit: cover;
+    }
+}
+
+
+

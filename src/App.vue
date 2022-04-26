@@ -1,18 +1,19 @@
 <template>
   <div class="App">
-    <!-- <SerchForm /> -->
+    <NavigationApp />
     <router-view />
   </div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
-// import SerchForm from "@/components/forms/SerchForm.vue";
+import NavigationApp from "@/components/navigation/navigation.vue";
+import "./scss/app.scss";
 
 export default {
   name: "App",
   components: {
-    // SerchForm,
+    NavigationApp,
   },
   beforeMount() {
     this.getMarvelComics();
