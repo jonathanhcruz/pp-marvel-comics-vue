@@ -11,7 +11,8 @@ const structureParamsUrl = (
 ) => {
   const paramsAuth = `${keyword}?ts=${ts}&apikey=${publicKey}&hash=${generateHash}`;
   const limitParams = `${limit ? `&limit=${limit}` : ""}`;
-  const formatParams = `${format ? `&format=${format}` : ""}`;
+  const formatParams =
+    keyword === "comics" ? `${format ? `&format=${format}` : ""}` : "";
   return `${paramsAuth}${limitParams}${formatParams}`;
 };
 

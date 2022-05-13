@@ -1,5 +1,6 @@
 <template>
   <div class="comics">
+    <h1>Comics</h1>
     <showComics />
   </div>
 </template>

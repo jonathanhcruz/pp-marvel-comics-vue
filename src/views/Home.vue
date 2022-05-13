@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <ShowComics />
+    <ShowComics :limit="100" page="home" />
   </div>
 </template>
 

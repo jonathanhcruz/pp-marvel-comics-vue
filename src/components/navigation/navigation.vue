@@ -3,7 +3,7 @@
     <div class="container-lg">
       <div class="row">
         <div class="navigation__logo col-5">
-          <router-link to="/">
+          <router-link to="/" class="border-0">
             <img
               :src="require('@/assets/img/logos/marvel-logo.png')"
               alt="Marvel Comics"
@@ -11,13 +11,17 @@
             />
           </router-link>
         </div>
-        <nav class="navigation__nav col-3 d-flex align-items-center">
+        <nav class="navigation__nav col-7 d-flex align-items-center">
           <ul class="d-flex m-0 p-0">
             <li>
               <router-link to="/comics">Comics</router-link>
             </li>
-            <li><router-link to="/personajes">Personajes</router-link></li>
-            <li><router-link to="/eventos">Eventos</router-link></li>
+            <li>
+              <router-link to="/personajes">Personajes</router-link>
+            </li>
+            <li>
+              <router-link to="/eventos">Eventos</router-link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -28,6 +32,9 @@
 <script>
 export default {
   name: "NavigationApp",
+  created() {
+    console.log(this.$route.name);
+  },
 };
 </script>
 
@@ -43,6 +50,9 @@ export default {
       color: var(--white);
       text-transform: capitalize;
     }
+  }
+  .router-link-exact-active {
+    border-bottom: 2px solid var(--white);
   }
 }
 </style>

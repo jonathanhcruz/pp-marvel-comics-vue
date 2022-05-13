@@ -1,19 +1,19 @@
 <template>
   <div class="characters">
     <h1>Characters</h1>
-    <div v-for="(commic, index) in comics" :key="`comic-${index}`">
-      <h3>{{ commic.title }}</h3>
-      <img :src="structureImgUrl(commic)" alt="" />
-    </div>
+    <ShowComics keyword="characters" :limit="30" />
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
+import ShowComics from "@/components/shows/showComics";
 
 export default {
   name: "CharactersView",
-  components: {},
+  components: {
+    ShowComics,
+  },
   computed: {
     ...mapState(["comics"]),
   },
