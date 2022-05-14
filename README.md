@@ -1,31 +1,12 @@
-# pp-marvel-comics-vue
+# Marvel Comics App
 
-## Project setup
-```
-yarn install
-```
+## Objective
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+this project aims to show my skills with Vue, Vuex, Vue Router and API connect.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Views
 
-### Run your unit tests
-```
-yarn test:unit
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
-## dev
-yarn serve --mode development
+## Legal
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+the public api of Marvel comics is used, this project has no other objective than to show my skills with Vue.
