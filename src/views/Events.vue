@@ -1,7 +1,7 @@
 <template>
   <div class="events">
     <h1>Events</h1>
-    <ShowComics keyword="events" :limit="15" />
+    <ShowComics detail="evento" :limit="15" keyword="events" />
   </div>
 </template>
 

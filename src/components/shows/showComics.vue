@@ -10,6 +10,7 @@
             :id="commic.id"
             :title="commic.title || commic.name"
             :imgUrl="structureImgUrl(commic)"
+            :detail="detail"
           />
         </div>
       </div>
@@ -31,19 +32,26 @@ export default {
   props: {
     keyword: {
       type: String,
-      default: "comics",
+      required: true,
     },
     limit: {
       type: Number,
       default: 10,
+    },
+    detail: {
+      type: String,
+      default: "",
+    },
+    format: {
+      type: String,
     },
   },
   computed: {
     ...mapState(["comics", "loading"]),
   },
   created() {
-    const { keyword, limit } = this;
-    this.getMarvelComics({ keyword, limit });
+    const { keyword, limit, format } = this;
+    this.getMarvelComics({ keyword, limit, format });
   },
   methods: {
     ...mapActions(["getMarvelComics"]),

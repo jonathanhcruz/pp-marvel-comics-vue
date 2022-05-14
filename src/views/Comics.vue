@@ -1,7 +1,7 @@
 <template>
   <div class="comics">
     <h1>Comics</h1>
-    <showComics />
+    <showComics detail="comic" keyword="comics" format="hardcover" />
   </div>
 </template>
 

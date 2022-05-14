@@ -14,7 +14,7 @@ const routes = [
   },
   {
     path: "/comic/:id",
-    name: "comics-detail",
+    name: "comicDetail",
     component: () => import("../views/DetailItem.vue"),
   },
   {
@@ -23,9 +23,19 @@ const routes = [
     component: () => import("../views/Characters.vue"),
   },
   {
+    path: "/personaje/:id",
+    name: "characterDetail",
+    component: () => import("../views/DetailItem.vue"),
+  },
+  {
     path: "/eventos",
     name: "events",
     component: () => import("../views/Events.vue"),
+  },
+  {
+    path: "/evento/:id",
+    name: "eventDetail",
+    component: () => import("../views/DetailItem.vue"),
   },
 ];
 

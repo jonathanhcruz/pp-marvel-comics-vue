@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <ShowComics :limit="100" page="home" />
+    <ShowComics
+      :limit="100"
+      detail="comic"
+      keyword="comics"
+      format="hardcover"
+    />
   </div>
 </template>
 

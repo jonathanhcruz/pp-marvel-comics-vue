@@ -32,9 +32,6 @@
 <script>
 export default {
   name: "NavigationApp",
-  created() {
-    console.log(this.$route.name);
-  },
 };
 </script>
 

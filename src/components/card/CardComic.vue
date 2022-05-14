@@ -1,7 +1,7 @@
 <template>
   <router-link
     class="card-comics d-flex justify-content-center align-items-center p-0 w-100"
-    :to="`/comic/${id}`"
+    :to="`/${detail}/${id}`"
   >
     <div class="card-comics__img w-100">
       <img
@@ -31,6 +31,10 @@ export default {
     title: {
       type: String,
       required: true,
+    },
+    detail: {
+      type: String,
+      default: "",
     },
   },
 };
