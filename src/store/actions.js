@@ -17,7 +17,7 @@ export default {
     commit("SET_LOADING", true);
     try {
       const res = await getSubResource(keyword, id);
-      commit("SET_COMICS", res);
+      commit("SET_DETAIL_ITEM", res?.[0]);
     } catch (err) {
       throw new Error(err);
     } finally {
