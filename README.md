@@ -5,6 +5,7 @@
 this project aims to show my skills with Vue, Vuex, Vue Router and API connect.
 
 ## Views
+<img src="./src/assets/screens/c1.png" width="300px">
 
 
 ## Legal
