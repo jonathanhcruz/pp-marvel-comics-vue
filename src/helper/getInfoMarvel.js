@@ -12,7 +12,7 @@ const structureParamsUrl = ({
 }) => {
   const paramskeyword = keyword || "";
   const paramId = id ? `/${id}` : "";
-  const limitParams = `${limit && !id ? `&limit=${limit}` : ""}`;
+  const limitParams = limit ? `&limit=${limit}` : "";
   const formatParams = format ? `&format=${format}` : "";
   const paramsAuth = `?ts=${ts}&apikey=${publicKey}&hash=${generateHash}`;
   return `${paramskeyword}${paramId}${paramsAuth}${limitParams}${formatParams}`;
@@ -41,6 +41,7 @@ export const getSubResource = async (keyword, id) => {
       keyword,
       id,
       ts,
+      limit: 1,
       generateHash,
       publicKey,
     }

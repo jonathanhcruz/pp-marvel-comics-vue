@@ -1,6 +1,6 @@
 <template>
   <div class="navigation m-3">
-    <div class="container-lg">
+    <div class="container">
       <div class="row">
         <div class="navigation__logo col-5">
           <router-link to="/" class="border-0">

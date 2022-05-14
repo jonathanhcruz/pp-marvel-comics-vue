@@ -1,0 +1,9 @@
+.btn {
+    &-primary {
+        background-color: var(--primary);
+
+        &:hover, &:active, &:focus {
+            background-color: var(--primary-acent);
+        } 
+    }
+}
