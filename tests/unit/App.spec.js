@@ -1,4 +1,4 @@
-import { shallowMount } from "@vue/test-utils";
+import { shallowMount, mount } from "@vue/test-utils";
 import App from "@/App.vue";
 import NavigationApp from "@/components/navigation/navigation.vue";
 
