@@ -9,8 +9,8 @@ describe("Test App", () => {
     expect(wrapper.findComponent(NavigationApp).exists()).toBe(true);
   });
 
-  // test("Exist component router-view", () => {
-  //   const wrapper = mount(App);
-  //   expect(wrapper.html()).toContain("<router-view");
-  // });
+  test("Exist component router-view", () => {
+    const wrapper = mount(App);
+    expect(wrapper.html()).toContain("<router-view");
+  });
 });
